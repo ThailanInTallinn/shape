@@ -19,5 +19,6 @@ struct shape {
 
 double area(struct shape);
 struct shape move(struct shape, int, int);
+struct shape scale(struct shape, double);
 
 #endif
