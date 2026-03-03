@@ -5,7 +5,7 @@ enum shape_kind {RECTANGLE, CIRCLE};
 struct point {int x, y;};
 
 struct shape {
-	shape_kind kind;	
+	enum shape_kind kind;	
 	struct point center;
 	union{
 		struct{
@@ -17,6 +17,7 @@ struct shape {
 	}u;
 };
 
-int area(struct shape);
+double area(struct shape);
+struct shape move(struct shape, int, int);
 
 #endif
